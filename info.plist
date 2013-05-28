@@ -32,7 +32,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BCD5B61C-8D00-4D8F-B554-C74F3180E01D</string>
+				<string>70964029-F8DB-4EDD-9959-D3B5A6D240F5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -43,7 +43,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>70964029-F8DB-4EDD-9959-D3B5A6D240F5</string>
+				<string>BCD5B61C-8D00-4D8F-B554-C74F3180E01D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -68,7 +68,7 @@
 				<integer>127</integer>
 				<key>script</key>
 				<string>tell application "System Events"
-	keystroke (ASCII character 28)	keystroke (ASCII character 29)	keystroke (ASCII character 28) using {option down}	keystroke (ASCII character 29) using {option down, shift down}	keystroke "h" using {option down, shift down}
+	keystroke (ASCII character 28)	keystroke (ASCII character 29)	keystroke (ASCII character 28) using {option down}	keystroke (ASCII character 29) using {option down, shift down}	keystroke "h" using {option down}
 end</string>
 				<key>type</key>
 				<integer>6</integer>
@@ -84,7 +84,7 @@ end</string>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>hotkey</key>
 				<integer>4</integer>
 				<key>hotmod</key>
@@ -145,7 +145,7 @@ except Exception, e:
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>hotkey</key>
 				<integer>4</integer>
 				<key>hotmod</key>
