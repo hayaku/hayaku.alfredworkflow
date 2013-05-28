@@ -32,6 +32,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>BCD5B61C-8D00-4D8F-B554-C74F3180E01D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>DA357DC0-BC6A-424F-A958-200031641460</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
 				<string>70964029-F8DB-4EDD-9959-D3B5A6D240F5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -50,6 +61,46 @@
 	<string>Hayaku for Alfred 2</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>tell application "System Events"
+	keystroke (ASCII character 28)	keystroke (ASCII character 29)	keystroke (ASCII character 28) using {option down}	keystroke (ASCII character 29) using {option down, shift down}	keystroke "h" using {option down, shift down}
+end</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BCD5B61C-8D00-4D8F-B554-C74F3180E01D</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>4</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>H</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>AE0C0CBF-692C-4BF0-800F-5E9D594232A9</string>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -91,19 +142,6 @@ except Exception, e:
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>15EDAA81-568E-4604-A9F0-47DC89FD0017</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -111,7 +149,7 @@ except Exception, e:
 				<key>hotkey</key>
 				<integer>4</integer>
 				<key>hotmod</key>
-				<integer>524288</integer>
+				<integer>655360</integer>
 				<key>hotstring</key>
 				<string>H</string>
 				<key>leftcursor</key>
@@ -122,7 +160,20 @@ except Exception, e:
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>AE0C0CBF-692C-4BF0-800F-5E9D594232A9</string>
+			<string>DA357DC0-BC6A-424F-A958-200031641460</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>15EDAA81-568E-4604-A9F0-47DC89FD0017</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -149,22 +200,32 @@ except Exception, e:
 		<key>15EDAA81-568E-4604-A9F0-47DC89FD0017</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>130</real>
 		</dict>
 		<key>1F64BD79-8B0F-4EEF-B1A0-E149825BA3DA</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>190</real>
 		</dict>
 		<key>70964029-F8DB-4EDD-9959-D3B5A6D240F5</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>130</real>
 		</dict>
 		<key>AE0C0CBF-692C-4BF0-800F-5E9D594232A9</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>BCD5B61C-8D00-4D8F-B554-C74F3180E01D</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>DA357DC0-BC6A-424F-A958-200031641460</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
