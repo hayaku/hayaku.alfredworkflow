@@ -6,7 +6,7 @@ Hi! This is an early alpha of the Hayaku workflow for Alfred 2, if you know what
 
 ### Somewhat simple way
 
-1. [Download the latest version of Hayaku](hayakubundle.com/downloads/hayaku.alfredworkflow)
+1. [Download the latest version of Hayaku](http://hayakubundle.com/downloads/hayaku.alfredworkflow)
 2. Install it to Alfred 2 (you'll need the PowerPack for it).
 3. Run `HayakuUpdate` command in Alfred to install Hayaku and wait a bit for it (we'll add a notification for successful install later).
 4. Use it!
