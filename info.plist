@@ -17,11 +17,33 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2BF48C80-E516-4D24-B36C-DFA2217B7DF7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>70964029-F8DB-4EDD-9959-D3B5A6D240F5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>15EDAA81-568E-4604-A9F0-47DC89FD0017</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>A00117A5-B4DB-4D63-BF17-29F8D4320949</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -192,6 +214,48 @@ except Exception, e:
 			<key>uid</key>
 			<string>1F64BD79-8B0F-4EEF-B1A0-E149825BA3DA</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>if [ -d .git ]; then
+  git pull &amp;&amp; git submodule update;
+else
+  git init &amp;&amp; git remote add origin git://github.com/hayaku/hayaku.alfredworkflow.git &amp;&amp; git pull -u origin master &amp;&amp; git submodule init &amp;&amp; git submodule update;
+fi;</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</string>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>2BF48C80-E516-4D24-B36C-DFA2217B7DF7</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>install hayaku</string>
+				<key>text</key>
+				<string>Install or update Hayaku</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A00117A5-B4DB-4D63-BF17-29F8D4320949</string>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -207,10 +271,25 @@ except Exception, e:
 			<key>ypos</key>
 			<real>190</real>
 		</dict>
+		<key>2BF48C80-E516-4D24-B36C-DFA2217B7DF7</key>
+		<dict>
+			<key>ypos</key>
+			<real>320</real>
+		</dict>
+		<key>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</key>
+		<dict>
+			<key>ypos</key>
+			<real>320</real>
+		</dict>
 		<key>70964029-F8DB-4EDD-9959-D3B5A6D240F5</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
+		</dict>
+		<key>A00117A5-B4DB-4D63-BF17-29F8D4320949</key>
+		<dict>
+			<key>ypos</key>
+			<real>320</real>
 		</dict>
 		<key>AE0C0CBF-692C-4BF0-800F-5E9D594232A9</key>
 		<dict>
