@@ -208,6 +208,23 @@ except Exception, e:
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>hayakuupdate</string>
+				<key>text</key>
+				<string>Update or install Hayaku</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A00117A5-B4DB-4D63-BF17-29F8D4320949</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -224,23 +241,6 @@ fi;
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>hayaku update</string>
-				<key>text</key>
-				<string>Update or install Hayaku</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A00117A5-B4DB-4D63-BF17-29F8D4320949</string>
 		</dict>
 	</array>
 	<key>readme</key>
