@@ -18,16 +18,7 @@
 			</dict>
 		</array>
 		<key>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2BF48C80-E516-4D24-B36C-DFA2217B7DF7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
+		<array/>
 		<key>70964029-F8DB-4EDD-9959-D3B5A6D240F5</key>
 		<array>
 			<dict>
@@ -224,9 +215,10 @@ except Exception, e:
   git pull &amp;&amp; git submodule update;
 else
   git init &amp;&amp; git remote add origin git://github.com/hayaku/hayaku.alfredworkflow.git &amp;&amp; git pull -u origin master &amp;&amp; git submodule init &amp;&amp; git submodule update;
-fi;</string>
+fi;
+</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -234,20 +226,14 @@ fi;</string>
 			<string>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</string>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>2BF48C80-E516-4D24-B36C-DFA2217B7DF7</string>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>install hayaku</string>
+				<string>hayaku update</string>
 				<key>text</key>
-				<string>Install or update Hayaku</string>
+				<string>Update or install Hayaku</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -270,11 +256,6 @@ fi;</string>
 		<dict>
 			<key>ypos</key>
 			<real>190</real>
-		</dict>
-		<key>2BF48C80-E516-4D24-B36C-DFA2217B7DF7</key>
-		<dict>
-			<key>ypos</key>
-			<real>320</real>
 		</dict>
 		<key>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</key>
 		<dict>
