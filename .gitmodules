@@ -1,6 +1,0 @@
-[submodule "hayaku"]
-	path = hayaku
-	url = git://github.com/hayaku/hayaku.git
-[submodule "alp"]
-	path = alp
-	url = git://github.com/phyllisstein/alp.git
