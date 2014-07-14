@@ -110,7 +110,7 @@
 				<string># Experimental selecting of the abbreviation, could be better, yeah.
 
 tell application "System Events"
-	keystroke (ASCII character 28)	keystroke (ASCII character 29)	keystroke (ASCII character 28) using {option down}	keystroke (ASCII character 29) using {option down, shift down}	keystroke "h" using {option down, shift down}
+	keystroke (ASCII character 28)	keystroke (ASCII character 29)	keystroke (ASCII character 28) using {option down}	keystroke (ASCII character 29) using {option down, shift down}	keystroke "h" using {option down}
 end</string>
 				<key>type</key>
 				<integer>6</integer>
