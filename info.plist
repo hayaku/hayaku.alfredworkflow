@@ -133,8 +133,25 @@ from __future__ import print_function
 import re
 
 from hayaku.hayaku_templates import make_template
+from hayaku.hayaku_get_merged_dict import get_merged_dict
 
-snippet = make_template("{query}", 'plain-text')
+hayaku = {}
+hayaku['options'] = {
+	"settings": {},
+	"CSS_preprocessor": None,
+	"CSS_whitespace_after_colon": " ",
+	"CSS_syntax_no_curly_braces": False,
+	"CSS_syntax_no_colons": False,
+	"CSS_syntax_no_semicolons": False,
+	"CSS_prefixes_disable": True,
+	"CSS_syntax_no_curly_braces": False
+}
+
+hayaku['options']['dict'], hayaku['options']['aliases'] = get_merged_dict(hayaku['options'])
+
+hayaku['abbr'] = "{query}"
+
+snippet = make_template(hayaku, 'plain-text')
 
 if snippet:
     print(snippet, end="")
@@ -213,6 +230,25 @@ if snippet:
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>updatehayaku</string>
+				<key>text</key>
+				<string>Update Hayaku</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A00117A5-B4DB-4D63-BF17-29F8D4320949</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -229,25 +265,6 @@ fi;
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>updatehayaku</string>
-				<key>text</key>
-				<string>Update Hayaku</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A00117A5-B4DB-4D63-BF17-29F8D4320949</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
