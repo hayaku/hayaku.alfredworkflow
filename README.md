@@ -1,6 +1,6 @@
 # Hayaku workflow for [Alfred 2](http://www.alfredapp.com/)
 
-![Screenshot of the Hayaku workflow window](https://cloud.githubusercontent.com/assets/177485/11638894/5fd17220-9d3a-11e5-822b-aa02363ec76d.png)
+![Screenshot of the Hayaku workflow window](https://cloud.githubusercontent.com/assets/177485/11640247/a35f9f28-9d42-11e5-8079-18b79f933930.gif)
 
 Hi! This is an early alpha of the Hayaku workflow for Alfred 2, if you know what you're doing, you can try it, otherwise — wait for the more stable version!
 
