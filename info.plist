@@ -223,12 +223,33 @@ end</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open settings.json</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>updatehayaku</string>
+				<string>hayakusettings</string>
+				<key>subtext</key>
+				<string>Open Hayaku settings json</string>
 				<key>text</key>
-				<string>Update Hayaku</string>
+				<string>hayakusettings</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -236,30 +257,6 @@ end</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>A00117A5-B4DB-4D63-BF17-29F8D4320949</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>if [ -d .git ]; then
-  git pull origin master &amp;&amp; git submodule update;
-else
-  git init &amp;&amp; git remote add origin git://github.com/hayaku/hayaku.alfredworkflow.git &amp;&amp; git fetch --all &amp;&amp; git reset --hard origin/master &amp;&amp; git submodule init &amp;&amp; git submodule update;
-fi;
-</string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
