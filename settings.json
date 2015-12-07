@@ -1,0 +1,10 @@
+{
+    "settings": {},
+    "CSS_preprocessor": null,
+    "CSS_whitespace_after_colon": " ",
+    "CSS_syntax_no_curly_braces": false,
+    "CSS_syntax_no_colons": false,
+    "CSS_syntax_no_semicolons": false,
+    "CSS_prefixes_disable": true,
+    "CSS_syntax_no_curly_braces": false
+}

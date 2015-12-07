@@ -6,20 +6,7 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>1F64BD79-8B0F-4EEF-B1A0-E149825BA3DA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>70964029-F8DB-4EDD-9959-D3B5A6D240F5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</key>
-		<array/>
-		<key>70964029-F8DB-4EDD-9959-D3B5A6D240F5</key>
+		<key>0E3C9CC4-91A5-4FC5-9B02-B6E96270552B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -30,6 +17,8 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</key>
+		<array/>
 		<key>A00117A5-B4DB-4D63-BF17-29F8D4320949</key>
 		<array>
 			<dict>
@@ -45,7 +34,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>70964029-F8DB-4EDD-9959-D3B5A6D240F5</string>
+				<string>F4A7288B-8164-4E77-94DE-2E12EB1ADE21</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -57,6 +46,17 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>BCD5B61C-8D00-4D8F-B554-C74F3180E01D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>F4A7288B-8164-4E77-94DE-2E12EB1ADE21</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>15EDAA81-568E-4604-A9F0-47DC89FD0017</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -82,11 +82,11 @@
 				<key>argument</key>
 				<integer>0</integer>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>4</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>655360</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>H</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -104,6 +104,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -125,44 +127,19 @@ end</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string># -*- coding: utf-8 -*-
-from __future__ import print_function 
-import re
-
-from hayaku.hayaku_templates import make_template
-from hayaku.hayaku_get_merged_dict import get_merged_dict
-
-hayaku = {}
-hayaku['options'] = {
-	"settings": {},
-	"CSS_preprocessor": None,
-	"CSS_whitespace_after_colon": " ",
-	"CSS_syntax_no_curly_braces": False,
-	"CSS_syntax_no_colons": False,
-	"CSS_syntax_no_semicolons": False,
-	"CSS_prefixes_disable": True,
-	"CSS_syntax_no_curly_braces": False
-}
-
-hayaku['options']['dict'], hayaku['options']['aliases'] = get_merged_dict(hayaku['options'])
-
-hayaku['abbr'] = "{query}"
-
-snippet = make_template(hayaku, 'plain-text')
-
-if snippet:
-    print(snippet, end="")
-</string>
+				<string>python alfred_hayaku_expand.py "{query}"</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>70964029-F8DB-4EDD-9959-D3B5A6D240F5</string>
+			<string>F4A7288B-8164-4E77-94DE-2E12EB1ADE21</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -213,17 +190,33 @@ if snippet:
 			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>h</string>
-				<key>text</key>
-				<string>Expand Hayaku</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please Wait for Hayaku to Expand stuff</string>
+				<key>script</key>
+				<string>python alfred_hayaku_filter.py "{query}"</string>
+				<key>title</key>
+				<string>Enter CSS abbreviation</string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>1F64BD79-8B0F-4EEF-B1A0-E149825BA3DA</string>
+			<string>0E3C9CC4-91A5-4FC5-9B02-B6E96270552B</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -249,6 +242,8 @@ if snippet:
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -273,25 +268,20 @@ fi;
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0E3C9CC4-91A5-4FC5-9B02-B6E96270552B</key>
+		<dict>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
 		<key>15EDAA81-568E-4604-A9F0-47DC89FD0017</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
 		</dict>
-		<key>1F64BD79-8B0F-4EEF-B1A0-E149825BA3DA</key>
-		<dict>
-			<key>ypos</key>
-			<real>190</real>
-		</dict>
 		<key>3B11C92C-E8DA-47AF-B07D-2FDD11786C22</key>
 		<dict>
 			<key>ypos</key>
 			<real>320</real>
-		</dict>
-		<key>70964029-F8DB-4EDD-9959-D3B5A6D240F5</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
 		</dict>
 		<key>A00117A5-B4DB-4D63-BF17-29F8D4320949</key>
 		<dict>
@@ -312,6 +302,11 @@ fi;
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>F4A7288B-8164-4E77-94DE-2E12EB1ADE21</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
